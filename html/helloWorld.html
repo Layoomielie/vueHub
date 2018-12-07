@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+    <ul>
+        <li v-for="book in books">{{book.name}}</li>
+    </ul>
+</div>
+
+</body>
+
+<script src="../js/vue.js">
+<!--<script src="https://unpkg.com/vue@vue@2.1.6/dist/vue.min.js"></script>-->
+<script>
+    var books = [
+        {name: 'Hello vue'},
+        {name: 'Hello Java'},
+        {name: 'Hello python'},
+    ]
+    new Vue({
+        el: '#app',
+        data:{ books}
+    })
+
+</script>
+</html>
